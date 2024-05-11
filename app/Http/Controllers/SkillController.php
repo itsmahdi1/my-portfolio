@@ -12,7 +12,7 @@ class SkillController extends Controller
      */
     public function index()
     {
-        return Inertia::render("Skills/Index")->withViewData(['title' => 'Skills']);
+        return Inertia::render("Skills/Index");
     }
 
     /**
@@ -20,7 +20,7 @@ class SkillController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render("Skills/Create");
     }
 
     /**
