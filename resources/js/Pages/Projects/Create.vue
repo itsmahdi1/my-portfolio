@@ -68,7 +68,6 @@
 </template>
 
 <script>
-import { useFrom } from 'vue';
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import { Head, useForm } from "@inertiajs/vue3";
 import InputError from "@/Components/InputError.vue";
@@ -82,7 +81,6 @@ export default {
         InputLabel,
         InputError,
         PrimaryButton,
-        useForm,
         AuthenticatedLayout,
     },
 
@@ -95,16 +93,18 @@ export default {
 
     setup(props) {
 
-        const { data, post } = useForm({
+        const form = useForm({
             name: "",
             project_url: "",
             skill_id: "",
+            image: null,
+            errors: {}
         });
 
 
         const submit = () => {
             console.log("Create Project");
-            post(route("projects.store"), {
+            form.post(route("projects.store"), {
                 onSuccess: () => {
                     // Handle success, like redirecting to a new page
                 },
