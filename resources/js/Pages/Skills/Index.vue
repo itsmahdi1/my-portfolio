@@ -39,7 +39,10 @@
                                     class="h-12 w-12 object-cover"
                                     />
                                 </td>
-                                <td class="px-6 py-4">Edit/Delete</td>
+                                <td class="px-6 py-4">
+                                    <Link :href="route('skills.edit', skill.id)" method="get" as="button" type="button" class="font-medium text-blue-500 hover:text-blue-700 mr-2">Edit</Link>
+                                    <Link :href="route('skills.destroy', skill.id)" class="font-medium text-red-500 hover:text-red-700 mr-2">Delete</Link>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
