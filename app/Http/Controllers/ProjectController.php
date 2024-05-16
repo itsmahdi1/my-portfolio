@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ProjectResource;
 use App\Models\Project;
 use App\Models\Skill;
 use Illuminate\Http\Request;
@@ -15,7 +16,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return Inertia::render("Projects/Index");
+        $projects = ProjectResource::collection(Project::with('skill')->get());
+        return Inertia::render("Projects/Index", compact('projects'));
     }
 
     /**
@@ -39,7 +41,7 @@ class ProjectController extends Controller
         ]);
 
         if($request->hasFile('image')){
-            $image = $request->file('image')->store('projects');
+            $image = $request->file('image')->store('/public/projects');
             Project::create([
                 "name" => $request->name,
                 "image" => $image,
