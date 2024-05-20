@@ -38,7 +38,7 @@ class SkillController extends Controller
         ]);
 
         if($request->hasFile("image")){
-            $image = $request->file("image")->store("/public/skills");
+            $image = $request->file("image")->store("skills", "public");
             Skill::create([
                 "image"=> $image,
                 "name" => $request->name
