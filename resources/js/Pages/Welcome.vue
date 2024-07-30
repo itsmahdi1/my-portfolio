@@ -2,6 +2,8 @@
 import { Head, Link } from '@inertiajs/vue3';
 import FrontendLayout from "@/Layouts/Frontend.vue";
 import Hero from "@/Components/Frontend/Hero.vue";
+import Promote from "@/Components/Frontend/Promote.vue";
+import About from "@/Components/Frontend/About.vue";
 
 
 function handleImageError() {
@@ -17,5 +19,9 @@ function handleImageError() {
     <FrontendLayout>
         <!-- Hero primary  -->
         <Hero />
+        <!-- Promote section  -->
+        <Promote />
+        <!-- About section  -->
+        <About />
     </FrontendLayout>
 </template>
