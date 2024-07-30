@@ -1,23 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import Frontend from "@/Layouts/Frontend.vue";
+import FrontendLayout from "@/Layouts/Frontend.vue";
 
-defineProps({
-    canLogin: {
-        type: Boolean,
-    },
-    canRegister: {
-        type: Boolean,
-    },
-    laravelVersion: {
-        type: String,
-        required: true,
-    },
-    phpVersion: {
-        type: String,
-        required: true,
-    },
-});
 
 function handleImageError() {
     document.getElementById('screenshot-container')?.classList.add('!hidden');
@@ -29,5 +13,7 @@ function handleImageError() {
 
 <template>
     <Head title="Welcome to Portfolio" />
-    <Frontend/>
+    <FrontendLayout>
+
+    </FrontendLayout>
 </template>
