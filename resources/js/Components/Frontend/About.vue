@@ -7,7 +7,7 @@
             <div class="flex flex-col xl:flex-row gap-24">
                 <img
                     class="object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl"
-                    src="/uploads/logo.png"
+                    src="/img/about.jpeg"
                     alt="about"
                 />
                 <div
