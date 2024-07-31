@@ -33,7 +33,7 @@
                 >
                     <img
                         class="rounded-lg"
-                        src="/uploads/logo.png"
+                        src="/img/hero.jpg"
                         alt="Hero"
                     />
                 </div>
