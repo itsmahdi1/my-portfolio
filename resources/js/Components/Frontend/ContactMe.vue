@@ -15,28 +15,12 @@ function setShowMessage(value) {
 }
 
 function cleanForm() {
-    // Log to verify this function is called
-    console.log("cleanForm function called");
-
-    // Reset form fields
     form.reset();
-
-    // Set showMessage to true
     setShowMessage(true);
-
-    // Log to verify showMessage is set to true
-    console.log("Form reset and showMessage set to true");
-
-    // Hide message after 3000ms
-    setTimeout(() => {
-        setShowMessage(false);
-        // Log to verify showMessage is set to false
-        console.log("showMessage set to false");
-    }, 3000);
+    setTimeout(() => setShowMessage(false), 2000);
 }
 
 const submit = () => {
-    console.log("Submit function called");
     form.post(route("contact"), {
         preserveScroll: true,
         onSuccess: () => cleanForm(),
