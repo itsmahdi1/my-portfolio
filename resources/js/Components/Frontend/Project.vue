@@ -8,6 +8,16 @@ defineProps({
     <Link
         :href="project.project_url"
         class="group flex flex-col items-center text-center cursor-pointer"
+        v-motion="{
+            initial: {
+                y: 100,
+                opacity: 0,
+            },
+            enter: {
+                y: 0,
+                opacity: 1,
+            },
+        }"
     >
         <div class="mb-6">
             <img

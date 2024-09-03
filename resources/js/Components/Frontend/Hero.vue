@@ -4,7 +4,19 @@
         id="home"
         class="lg:h-[85vh] flex items-center bg-light-primary dark:bg-dark-primary py-32 lg:py-0 overflow-hidden"
     >
-        <div class="container mx-auto h-full">
+        <div
+            class="container mx-auto h-full"
+            v-motion="{
+                initial: {
+                    y: 100,
+                    opacity: 0,
+                },
+                visible: {
+                    y: 0,
+                    opacity: 1,
+                },
+            }"
+        >
             <div class="flex flex-col md:flex-row items-center h-full pt-8">
                 <div class="flex-1 flex flex-col items-center lg:items-start">
                     <p class="text-lg text-accent text-md mb-[22px]">
@@ -19,8 +31,7 @@
                     <p
                         class="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing illo
-                        ad labore dolor elit.
+                        Crafting seamless and responsive web experiences, tailored to bring your ideas to life with precision and creativity.
                     </p>
                     <button
                         class="btn btn-md bg-accent hover:bg-light-secondary hover:text-light-tail-500 dark:hover:bg-dark-secondary dark:hover:text-dark-navy-100 md:btn-lg transition-all"
@@ -33,7 +44,9 @@
                         >
                             Follw me on LinkedIn
                         </h5>
-                        <div class="flex justify-center lg:justify-start items-center mb-6">
+                        <div
+                            class="flex justify-center lg:justify-start items-center mb-6"
+                        >
                             <a
                                 class="w-12 h-12 rounded-full flex items-center justify-center border border-white text-black dark:text-white hover:bg-light-secondary hover:border-light-secondary dark:hover:bg-dark-secondary dark:hover:border-dark-secondary mr-3 sm:mr-4"
                                 href="https://www.linkedin.com/in/el-mahdi-miftah/"

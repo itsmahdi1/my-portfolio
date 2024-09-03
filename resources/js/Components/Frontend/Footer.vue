@@ -8,7 +8,7 @@
                 <div class="flex space-x-6 items-center justify-center">
                     <img
                         class="h-8 w-auto"
-                        src="/uploads/logo.png"
+                        src="/img/logo.png"
                         alt="Laraveller.com"
                         width="150"
                     />

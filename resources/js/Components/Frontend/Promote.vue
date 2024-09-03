@@ -8,15 +8,15 @@
             >
                 <span class="block">Ready to dive in?</span>
                 <span class="block text-dark-primary dark:text-white"
-                    >Laravel 9 Admin Panel - Learn Roles and Permissions.</span
+                    >Explore My Latest Projects - See How I Bring Ideas to Life.</span
                 >
             </h2>
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                 <div class="inline-flex rounded-md shadow">
                     <a
-                        href="https://www.udemy.com/course/laravel-9-admin-panel-learn-roles-and-permissions/"
+                        href="#portfolio"
                         class="inline-flex items-center justify-center rounded-md border border-transparent bg-light-secondary dark:bg-dark-secondary px-5 py-3 text-base font-medium text-dark-primary dark:text-white hover:bg-light-primary dark:hover:bg-dark-primary"
-                        >Get the Course</a
+                        >Check My Work</a
                     >
                 </div>
             </div>
