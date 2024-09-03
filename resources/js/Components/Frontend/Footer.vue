@@ -14,7 +14,7 @@
                     />
                 </div>
                 <p class="text-paragraph opacity-80 text-[15px]">
-                    &copy; 2022 Laraveller.com All right reserved.
+                    &copy;2024  All right reserved.
                 </p>
             </div>
         </div>
